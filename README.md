@@ -1,14 +1,14 @@
-# MindPulse 🏃‍♂️⌚️
+# MindPulse 🧘‍♀️📚🏃‍♂️⌚️
 
-MindPulse is an iOS and watchOS application designed for tracking physical activities, monitoring real-time heart rate, and visualizing workout statistics. 
+MindPulse is an iOS and watchOS application designed for tracking daily microhabits and activities—ranging from physical workouts to mindfulness, reading, cleaning, and deep work—with optional real-time heart rate monitoring and habit statistics.
 
 ## 🌟 Features
 
-- **Activity Tracking**: Start and track various activities seamlessly from either your iPhone or Apple Watch.
-- **Real-time Heart Rate Monitoring**: Integrates with Apple Watch sensors to read heart rate data during workouts.
-- **Statistics & Charts**: Interactive custom charts on the iPhone to analyze your heart rate zones, activity duration, and overall performance.
+- **Microhabit & Activity Tracking**: Start and track various habits and activities (like meditation, reading, cleaning, or running) seamlessly from either your iPhone or Apple Watch.
+- **Optional Real-time Heart Rate Monitoring**: Integrates with Apple Watch sensors to read heart rate data during habits that support tracking (such as workouts or meditation).
+- **Statistics & Charts**: Interactive custom charts on the iPhone to analyze habit duration, performance patterns, and heart rate zones (for heart-rate-enabled activities).
 - **Watch Syncing**: Real-time two-way synchronization between iOS and watchOS.
-- **Custom Notifications**: Local notifications for workout reminders and goal achievements.
+- **Custom Notifications**: Local notifications for habit reminders and goal achievements.
 - **Dark/Light Mode**: Full support for iOS system appearance with custom color tokens.
 
 ## 🛠 Tech Stack & Architecture
@@ -19,7 +19,7 @@ MindPulse is an iOS and watchOS application designed for tracking physical activ
 - **Dependency Injection**: Custom DI container (`DIManager`)
 - **Local Storage**: CoreData
 - **Apple Frameworks**:
-  - `HealthKit` (Heart rate and workout data integration)
+  - `HealthKit` (Heart rate and workout data integration for relevant activities)
   - `WatchConnectivity` (Communication between iPhone and Apple Watch)
   - `UserNotifications` (Local alerts)
 - **Testing**: `XCTest` (Unit Tests & UI Tests)
@@ -32,4 +32,4 @@ MindPulse is an iOS and watchOS application designed for tracking physical activ
 
 ### Prerequisites
 - macOS with Xcode 15 or later
-- physical iPhone and Apple Watch for full testing (WatchConnectivity and HealthKit features are limited on the Simulator)
+- Physical iPhone and Apple Watch for full testing (WatchConnectivity and HealthKit features are limited on the Simulator)
